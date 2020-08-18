@@ -5,7 +5,7 @@ This is an attempt to create a photo manager (not an editor) via Electron. It wi
 It will be written with the following tools:
 
 - Angular 10
-- Electrom
+- Electron
 - TypeScript
 
 :)
