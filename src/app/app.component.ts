@@ -1,10 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ElectronService } from './shared/services/electron/electron.service';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'layla';
+
+  constructor(private electronService: ElectronService) {}
+
+  ngOnInit() {
+   this.electronService.ipcRenderer.send('to-server', 'hi');
+   this.electronService.ipcRenderer.on('to-client',  (event, arg) => {
+      console.log(arg);
+    });
+  }
 }
