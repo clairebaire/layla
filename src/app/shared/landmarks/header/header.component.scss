@@ -1,0 +1,21 @@
+:host {
+  width: 100%;
+  min-height: 20px;
+  -webkit-app-region: drag;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  font-size: 14px;
+  color: #ddd;
+  top: 2px;
+  transform: translateX(-50%);
+}
+
+.split {
+  width: calc(100% - 80px);
+  position: absolute;
+  top: -1rem;
+  right: 0;
+}

@@ -1,0 +1,14 @@
+.split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.split > * { 
+  width: calc(50% - .5rem);
+}
+
+.split__right {
+  align-self: flex-end;
+}

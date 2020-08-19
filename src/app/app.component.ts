@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ElectronService } from './shared/services/electron/electron.service';
 
-
 @Component({
-  selector: 'app-root',
+  selector: 'layla-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

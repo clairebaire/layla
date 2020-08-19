@@ -9,7 +9,8 @@ function createWindow() {
     height: 600,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    titleBarStyle: 'hiddenInset'
   });
   // load the dist folder from Angular
   win.loadURL(
@@ -35,6 +36,3 @@ app.on("window-all-closed", () => {
 
 // File Handling
 require('./file/file')
-
-// Database Handling
-require('./db')

@@ -1,0 +1,19 @@
+.h-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.h-list--right {
+  align-items: flex-end;
+}
+
+.h-list > * {
+  margin-right: 1rem;
+}
+
+@for $i from 2 through 10 {
+  .h-list--x#{$i} > * {
+    margin-right: #{$i}rem;
+  }
+}
