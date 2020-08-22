@@ -35,4 +35,4 @@ app.on("window-all-closed", () => {
 });
 
 // File Handling
-require('./file/file')
+require('./index')
